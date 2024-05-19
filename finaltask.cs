@@ -11,4 +11,24 @@ void array(string [] Array)
      Array[i] = Console.ReadLine();
   }
 }
+string [] symbol (string [] Array)
+{
+  int n = 0;
+  for (int i = 0 ; i <Array.Length ; i++)
+  {
+    if (Array[i].Length <=3)
+    n++;
+  }
+  string [] rezult = new string [n];
+  int j = 0;
+  for (int i = 0; i < Array.Length ; i++)
+  {
+    if (Array[i].Length <=3)
+    {
+        rezult[j] = Array[i];
+        j++;
+    }
+  }
+  return rezult;
+}
 
