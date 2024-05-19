@@ -32,3 +32,15 @@ string [] symbol (string [] Array)
   return rezult;
 }
 
+void print(string [] Array)
+{
+    Console.Write("Массив с элеменами, где не более 3-х символов:");
+    Console.Write("[");
+    for (int i = 0; i < Array.Length; i++)
+    {
+    Console.Write($"‘{Array[i]}’"+", ");
+    }
+    Console.Write("]");
+}
+array(Array);
+print(symbol(Array));
